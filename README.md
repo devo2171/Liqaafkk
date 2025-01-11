@@ -1,2 +1,0 @@
-# Liqaafkk
-A small Database 
