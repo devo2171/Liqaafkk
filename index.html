@@ -428,16 +428,4 @@
             for (let i = 0; i < 10; i++) {
                 setTimeout(() => {
                     const emoji = document.createElement('div');
-                    emoji.className = 'floating-emoji';
-                    emoji.style.left = `${Math.random() * 100}vw`;
-                    emoji.textContent = happyEmojis[Math.floor(Math.random() * happyEmojis.length)];
-                    document.body.appendChild(emoji);
-                    setTimeout(() => {
-                        document.body.removeChild(emoji);
-                    }, 5000);
-                }, i * 500);
-            }
-        }
-    </script>
-</body>
-</html>
+                    emoji.className = 'floating-emoji
