@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Firebase Integration</title>
+</head>
+<body>
+    <h1>Welcome to Firebase Integrated Page</h1>
+    <p>This page is now integrated with Firebase!</p>
+
+    <!-- إضافة Firebase باستخدام ES6 modules -->
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/11.1.0/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/11.1.0/firebase-analytics.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+            apiKey: "AIzaSyBWwDz80bdKeM5i-NvFy9rhZdnFbg24Hos",
+            authDomain: "fkk-4-liqaa.firebaseapp.com",
+            projectId: "fkk-4-liqaa",
+            storageBucket: "fkk-4-liqaa.firebasestorage.app",
+            messagingSenderId: "928509229211",
+            appId: "1:928509229211:web:5f67246f15d9cd15832e3e",
+            measurementId: "G-YBTTXPG3K0"
+        };
+
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+
+        console.log("Firebase has been successfully initialized!");
+    </script>
+</body>
+</html>
